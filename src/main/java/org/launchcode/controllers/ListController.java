@@ -71,7 +71,6 @@ public class ListController {
 
         return "list-jobs";
     }
-
     @RequestMapping(value = "all")
     public String listAllJobs(Model model) {
 
