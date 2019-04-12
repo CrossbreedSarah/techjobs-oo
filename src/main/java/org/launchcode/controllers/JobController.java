@@ -40,7 +40,7 @@ public class JobController {
         model.addAttribute(new JobForm());
         return "new-job";
    }
-   
+
 
     @RequestMapping(value = "add", method = RequestMethod.POST)
     public String add(Model model, @Valid JobForm jobForm, Errors errors) {
