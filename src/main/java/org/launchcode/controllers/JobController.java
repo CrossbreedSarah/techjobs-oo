@@ -54,6 +54,7 @@ public class JobController {
             return "new-job";
         }
         Job newJob = new Job();
+
         newJob.setName(jobForm.getName());
         newJob.setEmployer(jobData.getEmployers().findById(jobForm.getEmployerId()));
         newJob.setLocation(jobData.getLocations().findById(jobForm.getLocationId()));
